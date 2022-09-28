@@ -1,0 +1,50 @@
+[
+    {
+        "id": "01",
+        "category": "Games",
+        "name": "Football Game",
+        "description": "Football is the world’s most popular ball game in numbers of participants and spectators. Simple in its principal rules and essential equipment, the sport can be played almost anywhere, from official football playing fields (pitches) to gymnasiums, streets, school playgrounds, parks, or beaches.",
+        "img": "../images/football.png",
+        "time": 90
+      },
+      {
+        "id": "02",
+        "category": "Games",
+        "name": "Cricket Game",
+        "description": "Football is the world’s most popular ball game in numbers of participants and spectators. Simple in its principal rules and essential equipment, the sport can be played almost anywhere, from official football playing fields (pitches) to gymnasiums, streets, school playgrounds, parks, or beaches.",
+        "img": "../images/cricket.png",
+        "time": 240
+      },
+      {
+        "id": "03",
+        "category": "Games",
+        "name": "BasketBall Game",
+        "description": "Football is the world’s most popular ball game in numbers of participants and spectators. Simple in its principal rules and essential equipment, the sport can be played almost anywhere, from official football playing fields (pitches) to gymnasiums, streets, school playgrounds, parks, or beaches.",
+        "img": "../images/basketball.png",
+        "time": 80
+      },
+      {
+        "id": "04",
+        "category": "Games",
+        "name": "Hockey Game",
+        "description": "Football is the world’s most popular ball game in numbers of participants and spectators. Simple in its principal rules and essential equipment, the sport can be played almost anywhere, from official football playing fields (pitches) to gymnasiums, streets, school playgrounds, parks, or beaches.",
+        "img": "../images/hockey.png",
+        "time": 90
+      },
+      {
+        "id": "05",
+        "category": "Games",
+        "name": "VolleyBall Game",
+        "description": "Football is the world’s most popular ball game in numbers of participants and spectators. Simple in its principal rules and essential equipment, the sport can be played almost anywhere, from official football playing fields (pitches) to gymnasiums, streets, school playgrounds, parks, or beaches.",
+        "img": "../images/volleyball.png",
+        "time": 60
+      },
+      {
+        "id": "06",
+        "category": "Games",
+        "name": "Table-Tennis Game",
+        "description": "Football is the world’s most popular ball game in numbers of participants and spectators. Simple in its principal rules and essential equipment, the sport can be played almost anywhere, from official football playing fields (pitches) to gymnasiums, streets, school playgrounds, parks, or beaches.",
+        "img": "../images/table-tennis.png",
+        "time": 40
+      }
+]
