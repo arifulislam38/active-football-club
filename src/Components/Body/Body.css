@@ -1,0 +1,21 @@
+.body-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.body-wrapper{
+    overflow: hidden;
+    background-color: #cccccc1a;
+}
+.body-wrapper h1{
+    padding: 80px 0px 20px 50px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 0px 50px 50px 50px;
+}
+.info-container{
+    background-color: rgba(240, 248, 248, 0.384);
+    padding: 30px 50px;
+}
