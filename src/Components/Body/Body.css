@@ -12,10 +12,12 @@
 }
 
 .body-wrapper h1{
-    padding: 50px 0px 20px 50px;
+    padding: 30px 0px 10px 50px;
+    margin-bottom: 0px;
 }
 .body-wrapper h4{
-    padding: 0px 0px 20px 50px;
+    padding: 0px 0px 10px 50px;
+    margin-bottom: 0px;
 }
 .card-container{
     display: grid;
