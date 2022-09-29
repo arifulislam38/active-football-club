@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './info.css';
 import logo from '../../logo.svg';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Info = ({time}) => {
     const [rest, setrest] = useState(0);
 
@@ -9,12 +12,24 @@ const Info = ({time}) => {
         const restTime = localStorage.getItem('restTime');
         const restParse = JSON.parse(restTime);
         setrest(restParse);
-    },[])
+    },[]);
   const breakTime = (num) =>{
     localStorage.setItem('restTime',JSON.stringify(num));
 
     setrest(num);
-  }
+  };
+
+  const toasty = () =>{
+    toast.success('Succesfully completed', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+  };
     return (
         <div className='info-wrapper'>
             <div className='person-info'>
@@ -57,7 +72,8 @@ const Info = ({time}) => {
                     <h4>{rest} <span>seconds</span></h4>
                 </div>
             </div>
-            <button className='complete-btn'>Activity Completed</button>
+            <button className='complete-btn' onClick={toasty}>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };
