@@ -51,6 +51,7 @@ const Body = () => {
         <div className='body-container'>
             <div className='body-wrapper'>
                 <h1>Super active football club</h1>
+                <h4>Select todays game</h4>
                 <div className='card-container'>
                 {
                     games.map(game => <GameCard key={game.id} game={game} handleAddToTime={handleAddToTime}></GameCard>)

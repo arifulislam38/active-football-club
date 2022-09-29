@@ -2,12 +2,20 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+@media screen and (max-width: 576px) {
+    .body-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
 .body-wrapper{
     background-color: #cccccc1a;
 }
 
 .body-wrapper h1{
-    padding: 80px 0px 20px 50px;
+    padding: 50px 0px 20px 50px;
+}
+.body-wrapper h4{
+    padding: 0px 0px 20px 50px;
 }
 .card-container{
     display: grid;
@@ -15,3 +23,10 @@
     gap: 20px;
     padding: 0px 50px 50px 50px;
 }
+@media screen and (max-width: 576px) {
+    .card-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+  }

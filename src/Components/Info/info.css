@@ -1,13 +1,3 @@
-.info-container{
-    /* position: fixed; */
-    top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100vh;
-
-    /* width: 100%; */
-}
 
 .info-wrapper{
     padding: 30px 20px;
@@ -16,7 +6,16 @@
     flex-direction: column;
     gap: 20px;
     height: 100vh;
+    position: sticky;
+    top: 0px;
+
 }
+@media screen and (max-width: 576px) {
+    .info-wrapper{
+        position: sticky;
+        top: 0px;
+    }
+  }
 .info-wrapper h2{
     margin: 0px;
 }
