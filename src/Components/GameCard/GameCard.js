@@ -1,8 +1,8 @@
 import React from 'react';
 import './gamecard.css'
 
-const GameCard = (props) => {
-    const {img, name, description, time, age} = props.game;
+const GameCard = ({game, handleAddToTime}) => {
+    const {img, name, description, time, age} = game;
 
     return (
         <div className='game-card'>
@@ -11,7 +11,7 @@ const GameCard = (props) => {
             <p>{description.length > 110? description.slice(0,110) + `....` : description}</p>
             <p>For age: {age}</p>
             <p><small>Time Required: {time}</small></p>
-            <button>Add to List</button>
+            <button onClick={() => handleAddToTime(time)}>Add to List</button>
         </div>
     );
 };

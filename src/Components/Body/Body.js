@@ -7,7 +7,7 @@ import "./Body.css";
 const Body = () => {
     const [games, setgames] = useState([]);
 
-    const [time, setTime] = useState([]);
+    // const [time, setTime] = useState([]);
 
     useEffect(() => {
         fetch('games.json')
@@ -15,8 +15,8 @@ const Body = () => {
         .then(data => setgames(data));
     },[]);
 
-    const handleAddToTime = () =>{
-        console.log('button clicked')
+    const handleAddToTime = (time) =>{
+        console.log(time);
     }
     
     return (
