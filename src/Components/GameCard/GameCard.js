@@ -3,7 +3,7 @@ import './gamecard.css'
 
 const GameCard = ({game, handleAddToTime}) => {
     const {img, name, description, time, age} = game;
-
+    // console.log(time);
     return (
         <div className='game-card'>
             <img src={img} alt="this is an imag" />

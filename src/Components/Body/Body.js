@@ -2,12 +2,18 @@ import React, { useEffect, useState } from 'react';
 import GameCard from '../GameCard/GameCard';
 import Info from '../Info/Info';
 import "./Body.css";
+import { addToLocal ,getLocalStorage } from '../../localStorage/localStorage';
 
-
+let newtime = 0;
 const Body = () => {
+    
     const [games, setgames] = useState([]);
 
-    // const [time, setTime] = useState([]);
+    const [time, setTime] = useState(0);
+    console.log(time);
+    
+   
+    // console.log(newtime);
 
     useEffect(() => {
         fetch('games.json')
@@ -15,8 +21,30 @@ const Body = () => {
         .then(data => setgames(data));
     },[]);
 
-    const handleAddToTime = (time) =>{
-        console.log(time);
+
+    // useEffect(() =>{
+        
+    //     console.log(storedlocaldb);
+
+    //     // for(const id in storedlocaldb){
+    //     //     setTime(id);
+    //     // }
+    // },[])
+
+    const handleAddToTime = (game) =>{
+        newtime = game + newtime;
+        setTime(newtime);
+
+        // addToLocal(game);
+
+        // const storedlocaldb = getLocalStorage();
+        //     setTime(storedlocaldb);
+        // for(const id in storedlocaldb){
+        //     setTime(id);
+        //     console.log(setTime)
+        
+        // setTime(game);
+        // setgames(game);
     }
     
     return (
@@ -30,7 +58,7 @@ const Body = () => {
                 </div>
             </div>
             <div className='info-wrapper'>
-                <Info></Info>
+                <Info time={time}></Info>
             </div>
         </div>
     );
