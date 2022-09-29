@@ -1,5 +1,5 @@
 .game-card{
-    padding: 10px;
+    padding: 15px 10px;
     border: 1px solid goldenrod;
     border-radius: 10px;
 }
@@ -8,8 +8,18 @@
     height: 120px;
     border-radius: 10px;
 }
+.game-card h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.game-card p{
+    margin: 10px 0px;
+}
 .game-card button{
     width: 100%;
     padding: 10px 0px;
     background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
 }
