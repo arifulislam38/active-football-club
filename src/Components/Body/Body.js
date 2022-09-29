@@ -57,9 +57,9 @@ const Body = () => {
                 }
                 </div>
             </div>
-            <div className='info-wrapper'>
+            
                 <Info time={time}></Info>
-            </div>
+            
         </div>
     );
 };

@@ -16,7 +16,7 @@ const Info = ({time}) => {
     setrest(num);
   }
     return (
-        <div className='info-container'>
+        <div className='info-wrapper'>
             <div className='person-info'>
                 <img src={logo} alt="" />
                 <div>
@@ -40,11 +40,11 @@ const Info = ({time}) => {
             </div>
             <h2>Add a break</h2>
             <div className='break-info'>
-                <p onClick={()=> breakTime(10)}>10s</p>
-                <p onClick={()=> breakTime(15)}>15s</p>
-                <p onClick={()=> breakTime(20)}>20s</p>
-                <p onClick={()=> breakTime(25)}>25s</p>
-                <p onClick={()=> breakTime(30)}>30s</p>
+                <button onClick={()=> breakTime(10)}>10s</button>
+                <button onClick={()=> breakTime(15)}>15s</button>
+                <button onClick={()=> breakTime(20)}>20s</button>
+                <button onClick={()=> breakTime(25)}>25s</button>
+                <button onClick={()=> breakTime(30)}>30s</button>
             </div>
             <div className='exercise-info'>
                 <h3>Exercise Details</h3>
@@ -57,7 +57,7 @@ const Info = ({time}) => {
                     <h4>{rest} <span>seconds</span></h4>
                 </div>
             </div>
-            <button>Activity Completed</button>
+            <button className='complete-btn'>Activity Completed</button>
         </div>
     );
 };

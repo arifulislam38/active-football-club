@@ -5,13 +5,7 @@
 .body-wrapper{
     background-color: #cccccc1a;
 }
-.info-wrapper{
-    /* width: 100%; */
-    padding: 30px 20px;
 
-    /* right: 0px; */
-    background-color: rgba(240, 248, 248, 0.384);
-}
 .body-wrapper h1{
     padding: 80px 0px 20px 50px;
 }
