@@ -2,23 +2,27 @@ import React, { useEffect, useState } from 'react';
 import './info.css';
 import logo from '../../logo.svg';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';// import toast
 import 'react-toastify/dist/ReactToastify.css';
 
 const Info = ({time}) => {
-    const [rest, setrest] = useState(0);
+    const [rest, setrest] = useState(0);// state for breaktime counters--------------------
 
+// for storing data in the local storage
     useEffect(()=>{
         const restTime = localStorage.getItem('restTime');
         const restParse = JSON.parse(restTime);
         setrest(restParse);
     },[]);
+
+
   const breakTime = (num) =>{
     localStorage.setItem('restTime',JSON.stringify(num));
 
     setrest(num);
   };
-
+  
+// toast start here---------------------------------
   const toasty = () =>{
     toast.success('Succesfully completed', {
         position: "top-center",
@@ -41,16 +45,16 @@ const Info = ({time}) => {
             </div>
             <div className='bmi-info'>
                 <div>
-                    <p><strong>75</strong><small>kg</small></p>
+                    <p><strong>65</strong> <small>kg</small></p>
                     <p>weight</p>
                 </div>
                 <div>
-                    <p><strong>75</strong><small>kg</small></p>
-                    <p>weight</p>
+                    <p><strong>6.9</strong> <small>Inchies</small></p>
+                    <p>height</p>
                 </div>
                 <div>
-                    <p><strong>75</strong><small>kg</small></p>
-                    <p>weight</p>
+                    <p><strong>25</strong> <small>yrs</small></p>
+                    <p>age</p>
                 </div>
             </div>
             <h2>Add a break</h2>
